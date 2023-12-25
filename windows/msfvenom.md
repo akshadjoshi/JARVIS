@@ -1,0 +1,4 @@
+
+```sh
+msfvenom -l payloads
+```
