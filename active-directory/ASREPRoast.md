@@ -17,3 +17,9 @@ impacket-GetNPUsers joshi.local/ -dc-ip 192.168.1.100 -u user-Principal-Name-for
 ```sh
 kerbrute --dc 10.10.10.161 -d htb.local userenum sname.txt 
 ```
+
+**downgrade hash**
+
+```sh
+kerbrute --dc 10.10.10.161 -d htb.local userenum sname.txt --downgrade
+```
