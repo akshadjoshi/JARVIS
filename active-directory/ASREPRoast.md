@@ -1,6 +1,7 @@
 
 In this context, GetNPUsers is used to exploit the AS-REP (Authentication Service Response) protocol to request tickets without having the need to provide the account's password. **It targets user accounts that have the "Do not require Kerberos preauthentication" flag set, allowing the retrieval of credentials that can be cracked offline.**
 
+# Kerberos Pre-Authentication disabled
 
 **will give service user**
 ```sh
