@@ -1,0 +1,10 @@
+Location /opt/BloodHound-linux-x64/resources/app/Collectors
+
+sudo neo4j console
+sudo ./BloodHound --no-sandbox
+
+# On victim machine
+Import-Module ./SharpHound.ps1
+invoke-bloodhound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
+
+.\sharp.exe -c all -d <domain>
