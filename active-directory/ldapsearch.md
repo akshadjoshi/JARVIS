@@ -6,6 +6,14 @@ if roasting fails: vaild users via kerbrute ---> crackmapexec smb, ldap, winrm, 
 
 if ldapsearh fails you can use kerbrute to find user
 
+## to get dc name 
+
+```sh
+ldapsearch -x -H ldap://10.10.11.158 -s base namingcontexts
+```
+
+
+
 ## null session
 
 ```sh
