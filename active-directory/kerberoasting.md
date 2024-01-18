@@ -6,6 +6,12 @@ ldapsearh (find user principal name and service name) --> valid users via kerbru
 ```sh
 kerbrute --dc 10.10.10.161 -d htb.local userenum validuser-list
 ```
+**verify valid user via nmap**
+```sh
+nmap -p 88 --script=krb5-enum-users --script-args krb5-enum-users.realm='joshi.local',userdb=/home/hello/ad/username.txt only-usernames.txt <IP>
+```
+
+
 
 **finding password hash via service user**
 `got service user name via ASREPRoasting`
