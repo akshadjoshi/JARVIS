@@ -7,6 +7,10 @@
 hashcat -m 13100 -a 0 GetUserSPNs.out ~/rockyou.txt
 ```
 
+```bash
+john --wordlist=/root/rockyou.txt hash
+```
+
 **ASREPRoast**
 
 ```bash
