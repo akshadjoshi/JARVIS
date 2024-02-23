@@ -11,3 +11,7 @@ powershell -ep bypass
 ```sh
 Get-ModifiableServiceFile
 ```
+
+```sh
+.\accesschk64.exe -wvu "binary-path"
+```
