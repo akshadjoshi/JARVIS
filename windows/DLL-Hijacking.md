@@ -18,3 +18,9 @@ wmic service where startmode="Auto" get name, displayname, state, startmode,path
 ```sh
 wmic service where startmode="Auto" get name, displayname, state, startmode,pathname | findstr /i "auto" | findstr /i /v "c:\windows"
 ```
+
+**powershell command**
+
+```sh
+Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Object {$_.State -like 'Running'}
+```
