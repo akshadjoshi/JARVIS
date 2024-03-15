@@ -21,3 +21,10 @@ hashcat -m 18200 -a 0 service-users-hash.txt ~/rockyou.txt
 ```sh
 kerbrute --dc 10.10.10.161 -d htb.local userenum sname.txt --downgrade
 ```
+
+
+**postgresql hash cracking**
+
+```sh
+hashcat -m 12001 hashes-postgresql /usr/share/wordlists/fasttrack.txt
+```
