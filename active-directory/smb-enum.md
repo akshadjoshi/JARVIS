@@ -6,6 +6,13 @@ nmap -v -Pn -n -sT -sCV -p 139,445 --script=smb* <IP> -oN nmap/smb
 
 ## smbclient 
 
+**imp**
+
+```sh
+smbclient -L //IP -U dcname//username%password
+```
+
+
 **list the content**
 ```bash
 smbclient -L //<IP>
