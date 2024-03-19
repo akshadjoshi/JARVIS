@@ -62,6 +62,13 @@ smbmap -H 10.10.11.174
 smbmap -H 192.168.1.100 -u administrator -p 'NTLM:LM'
 ```
 
+**for domain join pc**
+```
+smbmap -H <ip> -d <domain-name> -u <username> -p <password>
+```
+
+
+
 ## SMB Anonymous
 
 **to list the contents**
