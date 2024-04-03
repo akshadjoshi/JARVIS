@@ -8,3 +8,4 @@
 
 **note**: `transfer your own ncat.exe`
 
+**good blog on potato attacks** - https://hideandsec.sh/books/windows-sNL/page/in-the-potato-family-i-want-them-all
